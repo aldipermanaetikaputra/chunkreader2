@@ -36,7 +36,7 @@ const { ChunkReader } = require('chunk-reader2');
 
 ```js
 const reader = new ChunkReader({
-  filePath: './some_file.txt',
+  filePath: './file.txt',
   bufferSize: 1024,
 });
 
@@ -69,7 +69,7 @@ Example:
 
 ```js
 const reader = new ChunkReader({
-  filePath: './some_file.txt',
+  filePath: './file.txt',
   bufferSize: 8,
 });
 
@@ -108,7 +108,7 @@ Example:
 
 ```js
 const reader = new ChunkReader({
-  filePath: './some_file.txt',
+  filePath: './file.txt',
   bufferSize: 1,
 });
 
