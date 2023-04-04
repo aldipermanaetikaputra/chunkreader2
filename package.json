@@ -6,10 +6,10 @@
   "keywords": [
     "chunk",
     "reader",
+    "chunk-reader",
     "file",
     "buffer",
-    "stream",
-    "chunk-reader"
+    "stream"
   ],
   "author": "Aldi Permana Etika Putra <aldipermanaetikaputra@gmail.com>",
   "license": "MIT",
