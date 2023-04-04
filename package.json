@@ -1,8 +1,8 @@
 {
-  "name": "chunkreader",
+  "name": "chunkreader2",
   "version": "1.1.5",
   "description": "Asynchronous, buffered, chunk-by-chunk file reader with customizable buffer size on Node.js.",
-  "url": "https://github.com/aldipermanaetikaputra/chunkreader",
+  "url": "https://github.com/aldipermanaetikaputra/chunkreader2",
   "keywords": [
     "chunk",
     "reader",
@@ -14,7 +14,7 @@
   "author": "Aldi Permana Etika Putra <aldipermanaetikaputra@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/aldipermanaetikaputra/chunkreader/issues"
+    "url": "https://github.com/aldipermanaetikaputra/chunkreader2/issues"
   },
   "files": [
     "lib"
@@ -29,7 +29,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/aldipermanaetikaputra/chunkreader.git"
+    "url": "https://github.com/aldipermanaetikaputra/chunkreader2.git"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"

@@ -1,4 +1,4 @@
-# chunkreader
+# chunkreader2
 
 Asynchronous, buffered, chunk-by-chunk file reader with customizable buffer size.
 
@@ -7,13 +7,13 @@ Asynchronous, buffered, chunk-by-chunk file reader with customizable buffer size
 NPM
 
 ```sh
-npm install chunkreader
+npm install chunkreader2
 ```
 
 yarn
 
 ```sh
-yarn add chunkreader
+yarn add chunkreader2
 ```
 
 ## Usage
@@ -23,13 +23,13 @@ yarn add chunkreader
 ES6
 
 ```js
-import { ChunkReader } from 'chunkreader';
+import { ChunkReader } from 'chunkreader2';
 ```
 
 CommonJS
 
 ```js
-const { ChunkReader } = require('chunkreader');
+const { ChunkReader } = require('chunkreader2');
 ```
 
 #### Example
@@ -183,7 +183,7 @@ yarn test
 
 ## Related
 
-- [linereader2](https://github.com/aldipermanaetikaputra/linereader2) - Asynchronous, buffered, line-by-line file reader with customizable buffer size and separator.
+- [linereader2](https://github.com/aldipermanaetikaputra/line-reader2) - Asynchronous, buffered, line-by-line file reader with customizable buffer size and separator.
 
 ## Contribute
 
