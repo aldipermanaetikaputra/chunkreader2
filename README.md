@@ -52,11 +52,11 @@ while (!reader.isClosed) {
 
 The options you can pass are:
 
-| Name                   | Type      | Default | Description                                                                                                                                      |
-| ---------------------- | --------- | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
-| filePath               | `string`  | none    | The path or location of your file _(required)_                                                                                                   |
-| bufferSize             | `number`  | `1024`  | Chunk/buffer size in bytes                                                                                                                       |
-| removeInvisibleUnicode | `boolean` | `false` | Remove all (or perhaps just "common") non-printable Unicode characters except line breaks. Using regex: `[\x00-\x09\x0B-\x0C\x0E-\x1F\x7F-\x9F]` |
+| Name                   | Type      | Default | Description                                                                                                                                         |
+| ---------------------- | --------- | ------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
+| filePath               | `string`  | none    | The path or location of your file _(required)_                                                                                                      |
+| bufferSize             | `number`  | `1024`  | Chunk/buffer size in bytes                                                                                                                          |
+| removeInvisibleUnicode | `boolean` | `false` | Remove all (or perhaps just "common") non-printable Unicode characters except line breaks. Using regex: `/[\x00-\x09\x0B-\x0C\x0E-\x1F\x7F-\x9F]/g` |
 
 ### Instance Methods
 
