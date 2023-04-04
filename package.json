@@ -1,6 +1,6 @@
 {
   "name": "chunkreader2",
-  "version": "1.1.5",
+  "version": "1.1.6",
   "description": "Asynchronous, buffered, chunk-by-chunk file reader with customizable buffer size on Node.js.",
   "url": "https://github.com/aldipermanaetikaputra/chunkreader2",
   "keywords": [
