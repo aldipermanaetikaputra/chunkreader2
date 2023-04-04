@@ -97,7 +97,7 @@ mmmmnnnn
 oooo
 ```
 
-**NOTE:** This method can be called concurrently with safe because it used [async-mutex](https://github.com/DirtyHairy/async-mutex) library to handle Mutual Exclusion.
+**NOTE:** This method can be called concurrently with safe because it used [async-mutex](https://github.com/DirtyHairy/async-mutex) module to handle Mutual Exclusion.
 
 #### `reset(): void`
 
@@ -163,6 +163,22 @@ The property of `ChunkReader` instance you can access are:
 | readCount   | `number`  | Count of `read()` operation called                                            |
 | isOpened    | `boolean` | Indicates whether the reader has opened the file or `open()` has been called  |
 | isClosed    | `boolean` | Indicates whether the reader has closed the file or `close()` has been called |
+
+## Testing
+
+This library is well tested. You can test the code as follows:
+
+NPM
+
+```sh
+npm test
+```
+
+yarn
+
+```sh
+yarn test
+```
 
 ## Related
 
