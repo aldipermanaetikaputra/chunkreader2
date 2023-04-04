@@ -18,7 +18,7 @@ yarn add chunkreader2
 
 ## Usage
 
-#### Import
+### Import
 
 ES6
 
@@ -32,7 +32,7 @@ CommonJS
 const { ChunkReader } = require('chunkreader2');
 ```
 
-#### Example
+### Example
 
 ```js
 const reader = new ChunkReader({
@@ -48,7 +48,7 @@ while (!reader.isClosed) {
 
 ## API
 
-#### `new ChunkReader(options: ChunkReaderOptions): ChunkReader`
+### `new ChunkReader(options: ChunkReaderOptions): ChunkReader`
 
 The options you can pass are:
 
