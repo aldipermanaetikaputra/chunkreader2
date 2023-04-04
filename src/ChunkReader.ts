@@ -3,6 +3,7 @@ import util from 'util';
 
 export interface ChunkReaderOptions {
   filePath: string;
+  bufferEncoding?: BufferEncoding;
   bufferSize?: number;
   removeInvisibleUnicode?: boolean;
 }
@@ -17,6 +18,7 @@ class ChunkReader {
   private fileDescriptor?: number;
   private removeInvisibleUnicode?: boolean;
 
+  public bufferEncoding: BufferEncoding;
   public filePath: string;
   public bufferSize: number;
   public bytesLength: number;
@@ -33,6 +35,7 @@ class ChunkReader {
 
   constructor(options: ChunkReaderOptions) {
     this.filePath = options.filePath;
+    this.bufferEncoding = options.bufferEncoding || 'utf-8';
     this.bufferSize = options.bufferSize || 1024;
     this.removeInvisibleUnicode = options.removeInvisibleUnicode;
     this.bytesLength = 0;
@@ -101,7 +104,7 @@ class ChunkReader {
       this.close();
     }
 
-    let string = data.toString('utf-8');
+    let string = data.toString(this.bufferEncoding);
 
     // Removing all (or perhaps just "common") non-printable Unicode characters - except line breaks
     if (this.removeInvisibleUnicode) {
