@@ -16,7 +16,7 @@
   "bugs": {
     "url": "https://github.com/aldipermanaetikaputra/chunk-reader2/issues"
   },
-  "file": [
+  "files": [
     "./lib",
     "./src"
   ],
