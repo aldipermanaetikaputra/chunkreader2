@@ -17,10 +17,11 @@
     "url": "https://github.com/aldipermanaetikaputra/chunk-reader2/issues"
   },
   "files": [
-    "/lib"
+    "lib"
   ],
   "type": "module",
-  "main": "./lib/index.js",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "scripts": {
     "build": "tsc -p tsconfig.build.json",
     "test": "jest",
@@ -29,6 +30,9 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/aldipermanaetikaputra/chunk-reader2.git"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
   },
   "dependencies": {
     "async-mutex": "^0.4.0",
