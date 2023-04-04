@@ -59,6 +59,18 @@ The options you can pass are:
 | bufferEncoding         | `'ascii' \| 'utf8' \| 'utf-8' \| 'utf16le' \| 'ucs2' \| 'ucs-2' \| 'base64' \| 'latin1' \| 'binary' \| 'hex'` | `'utf8'` | Character encoding to use on `read()` operation                                                                                                     |
 | removeInvisibleUnicode | `boolean`                                                                                                     | `false`  | Remove all (or perhaps just "common") non-printable Unicode characters except line breaks. Using regex: `/[\x00-\x09\x0B-\x0C\x0E-\x1F\x7F-\x9F]/g` |
 
+### Instance Property
+
+The property of `ChunkReader` instance you can access are:
+
+| Name        | Type      | Description                                                                   |
+| ----------- | --------- | ----------------------------------------------------------------------------- |
+| bytesLength | `number`  | Size of the file in bytes. Value assigned on `open()` operation               |
+| bytesRead   | `number`  | Size of the bytes read in the file by `read()` operation                      |
+| readCount   | `number`  | Count of `read()` operation called                                            |
+| isOpened    | `boolean` | Indicates whether the reader has opened the file or `open()` has been called  |
+| isClosed    | `boolean` | Indicates whether the reader has closed the file or `close()` has been called |
+
 ### Instance Methods
 
 #### `read(): Promise<string>`
@@ -152,18 +164,6 @@ Manually open the file descriptor and get `bytesLength`. This method will be cal
 #### `close(): void`
 
 Manually close the file descriptor. This method will be called automatically on the last `read()` operation (last file stream).
-
-### Instance Property
-
-The property of `ChunkReader` instance you can access are:
-
-| Name        | Type      | Description                                                                   |
-| ----------- | --------- | ----------------------------------------------------------------------------- |
-| bytesLength | `number`  | Size of the file in bytes. Value assigned on `open()` operation               |
-| bytesRead   | `number`  | Size of the bytes read in the file by `read()` operation                      |
-| readCount   | `number`  | Count of `read()` operation called                                            |
-| isOpened    | `boolean` | Indicates whether the reader has opened the file or `open()` has been called  |
-| isClosed    | `boolean` | Indicates whether the reader has closed the file or `close()` has been called |
 
 ## Testing
 
