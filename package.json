@@ -1,0 +1,53 @@
+{
+  "name": "chunk-reader2",
+  "version": "1.0.0",
+  "description": "Asynchronous, buffered, chunk-by-chunk file reader with customizable buffer size on Node.js.",
+  "url": "https://github.com/aldipermanaetikaputra/chunk-reader2",
+  "keywords": [
+    "chunk",
+    "reader",
+    "file",
+    "buffer",
+    "stream",
+    "chunk-reader"
+  ],
+  "author": "Aldi Permana Etika Putra <aldipermanaetikaputra@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aldipermanaetikaputra/chunk-reader2/issues"
+  },
+  "file": [
+    "./lib",
+    "./src"
+  ],
+  "type": "module",
+  "main": "./lib/index.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "test": "jest",
+    "lint": "eslint . --ext .ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aldipermanaetikaputra/chunk-reader2.git"
+  },
+  "dependencies": {
+    "async-mutex": "^0.4.0",
+    "denque": "^2.1.0",
+    "typedfastbitset": "^0.4.1"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.0",
+    "@types/tmp": "^0.2.3",
+    "@typescript-eslint/eslint-plugin": "^5.57.1",
+    "@typescript-eslint/parser": "^5.57.1",
+    "eslint": "^8.37.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "jest": "^29.5.0",
+    "prettier": "^2.8.7",
+    "tmp": "^0.2.1",
+    "ts-jest": "^29.0.5",
+    "typescript": "4.9.5"
+  }
+}
