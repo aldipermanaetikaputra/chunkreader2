@@ -6,13 +6,10 @@ Asynchronous, buffered, chunk-by-chunk file reader with customizable buffer size
 
 NPM
 
-```sh
+```bash
+# using npm
 npm install chunkreader2
-```
-
-yarn
-
-```sh
+# using yarn
 yarn add chunkreader2
 ```
 
@@ -20,15 +17,10 @@ yarn add chunkreader2
 
 ### Import
 
-ES6
-
 ```js
+// in ESM
 import { ChunkReader } from 'chunkreader2';
-```
-
-CommonJS
-
-```js
+// in CommonJS
 const { ChunkReader } = require('chunkreader2');
 ```
 
@@ -54,7 +46,7 @@ The options you can pass are:
 
 | Name                   | Type                                                                                                          | Default  | Description                                                                                                                                         |
 | ---------------------- | ------------------------------------------------------------------------------------------------------------- | -------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
-| filePath               | `string`                                                                                                      | none     | The path or location of your file _(required)_                                                                                                      |
+| filePath               | `string`                                                                                                      | none     | The path or location of your file **(required)**                                                                                                    |
 | bufferSize             | `number`                                                                                                      | `1024`   | Chunk/buffer size in bytes                                                                                                                          |
 | bufferEncoding         | `'ascii' \| 'utf8' \| 'utf-8' \| 'utf16le' \| 'ucs2' \| 'ucs-2' \| 'base64' \| 'latin1' \| 'binary' \| 'hex'` | `'utf8'` | Character encoding to use on `read()` operation                                                                                                     |
 | removeInvisibleUnicode | `boolean`                                                                                                     | `false`  | Remove all (or perhaps just "common") non-printable Unicode characters except line breaks. Using regex: `/[\x00-\x09\x0B-\x0C\x0E-\x1F\x7F-\x9F]/g` |
@@ -169,21 +161,17 @@ Manually close the file descriptor. This method will be called automatically on 
 
 This library is well tested. You can test the code as follows:
 
-NPM
-
-```sh
+```bash
+# using npm
 npm test
-```
-
-yarn
-
-```sh
+# using yarn
 yarn test
 ```
 
 ## Related
 
-- [linereader2](https://github.com/aldipermanaetikaputra/line-reader2) - Asynchronous, buffered, line-by-line file reader with customizable buffer size and separator.
+- [linereader2](https://github.com/aldipermanaetikaputra/linereader2) - Asynchronous, buffered, line-by-line file reader with customizable buffer size and separator.
+- [linecounter2](https://github.com/aldipermanaetikaputra/linecounter2) - ⚡ Fastest and memory-efficient async file line counter with customizable buffer size and separator on Node.js.
 
 ## Contribute
 
