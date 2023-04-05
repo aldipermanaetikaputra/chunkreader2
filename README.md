@@ -171,7 +171,7 @@ yarn test
 ## Related
 
 - [linereader2](https://github.com/aldipermanaetikaputra/linereader2) - Asynchronous, buffered, line-by-line file reader with customizable buffer size and separator.
-- [linecounter2](https://github.com/aldipermanaetikaputra/linecounter2) - ⚡ Fastest and memory-efficient async file line counter with customizable buffer size and separator on Node.js.
+- [linecounter2](https://github.com/aldipermanaetikaputra/linecounter2) - ⚡ Fastest and memory-efficient async file line counter with customizable buffer size and separator.
 
 ## Contribute
 
